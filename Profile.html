@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <h2 text-align="center">Personal Information</h2>
+        <div>
+            <p><img src="pic.jpg" alt="Dao Tuan Dung" align="left" style="width:200px">
+            <p>Full name: <b>Dao Tuan Dzung</b></p>
+            <p>Date of birth: 09/01/1999</p>
+            <p>Gender: Male</p>
+            <p>Address: Ninh Giang- Hai Duong</p>
+            <p>Email: <a href="mailto:someone@example.com">tuandung0901@gmail.com</a></p>
+            <p><a href="https://www.facebook.com/dung.dt99" target="_blank">Facebook</a></p>
+        </div>
+        <div>
+            <button onclick="displayResult()" style="width: 90px;height: 30px;">Education</button>
+            <script>
+                function displayResult() {
+                    document.getElementById("id").innerHTML = "<dl><dt><b>Hanoi University of Science and Technology</b></dt> <dd>From 8/2017 until now</dd><dd>Major: IT</dd> <dt><b> Quang Trung High School, Hai Duong</b></dt> <dd>From 2014 until 2017</dd></dl> ";
+                }
+            </script>
+            <p id="id"></p>
+        </div>
+        <div>
+            <button onclick="displayResult1()" style="width: 90px;height: 30px;">Skills</button>
+            <script>
+                function displayResult1() {
+                    document.getElementById("id1").innerHTML = "<ul><li><b>Hard skills:</b></li> <li><b>Soft skills:</b></li></ul>";
+                }
+            </script>
+            <p id="id1"></p>
+        </div>
+        <div>
+            <button onclick="displayResult2()" style="width: 90px;height: 30px;">Experience</button>
+            <script>
+                function displayResult2() {
+                    document.getElementById("id2").innerHTML = "<b>My exp</b>";
+                }
+            </script>
+            <p id="id2"></p>
+        </div>
+        <div>
+            <button onclick="displayResult3()" style="width: 90px;height: 30px;">Certificate</button>
+            <script>
+                function displayResult3() {
+                    document.getElementById("id3").innerHTML = "TOEIC and Maths";
+                }
+            </script>
+            <p id="id3"></p>
+        </div>
+        <div>
+            <button onclick="displayResult4()" style="width: 90px;height: 30px;">Hobbies</button>
+            <script>
+                function displayResult4() {
+                    document.getElementById("id4").innerHTML = "<ul><li>Playing sports</li> <li>Book and Music</li><li>Exploring new things</li></ul>";
+                }
+            </script>
+            <p id="id4"></p>
+        </div>
+        <div>
+            <button onclick="displayResult5()" style="width: 90px;height: 30px;">Objective</button>
+            <script>
+                function displayResult5() {
+                    document.getElementById("id5").innerHTML = "<strong>I have no special talent, I'm only passionately curious!</strong>";
+                }
+            </script>
+            <p id="id5"></p>
+        </div>
+
+        <footer>
+            <p>Contact: email <a href="mailto:someone@example.com">tuandung0901@gmail.com</a> or tel 0969821876. Thank
+                you!
+            </p>
+        </footer>
+</body>
+
+</html>
